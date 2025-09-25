@@ -4,7 +4,11 @@ import React from "react";
 import { FaPassport } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = () => {
+type navProps = {
+  openNav: () => void;
+};
+
+const Navbar = ({ openNav }: navProps) => {
   return (
     <div className="bg-blue-950 transition-all duration-200 h-[12vh] z-[1000] fixed  w-full">
       <div className="flex justify-between items-center h-full w-[90%] xl:w-[80%] mx-auto">
@@ -41,7 +45,10 @@ const Navbar = () => {
             Download Cv
           </button>
           {/* Burger Menu  */}
-          <RxHamburgerMenu className="w-8 h-8 cursor-pointer text-white lg:hidden" />
+          <RxHamburgerMenu
+            onClick={openNav}
+            className="w-8 h-8 cursor-pointer text-white lg:hidden"
+          />
         </div>
       </div>
     </div>
