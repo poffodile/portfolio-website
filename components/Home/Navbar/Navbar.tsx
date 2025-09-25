@@ -40,7 +40,7 @@ const Navbar = ({ openNav }: navProps) => {
         {/* Buttons  */}
         <div className="flex items-center space-x-4">
           <button
-            className="md:px-12 md:py-2.5 px-8 py-2 text-black text-base bg-white hover:bg-gray-200 
+            className="md:px-12 md:py-2.5  px-4 py-1.5 text-black text-base bg-white hover:bg-gray-200 
         transition-all duration-200 rounded-lg ">
             Download Cv
           </button>
