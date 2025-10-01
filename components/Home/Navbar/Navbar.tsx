@@ -7,10 +7,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 type navProps = {
   openNav: () => void;
 };
-
+//  bg-blue-950
 const Navbar = ({ openNav }: navProps) => {
   return (
-    <div className="bg-blue-950 transition-all duration-200 h-[12vh] z-[1000] fixed  w-full">
+    <div className=" transition-all duration-200 h-[12vh] z-[1000] fixed  w-full">
       <div className="flex justify-between items-center h-full w-[90%] xl:w-[80%] mx-auto">
         {/*Logo */}
         <div className="flex items-center space-x-2">
@@ -18,7 +18,7 @@ const Navbar = ({ openNav }: navProps) => {
           <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center flex-col">
             <FaPassport className="text-white w-6 h-6" />
           </div>
-          <h1 className="text-white font-bold text-xl md:text-2xl uppercase">
+          <h1 className="text-amber-800 font-bold text-1xl md:text-3xl drop-shadow-[0_0_20px_rgb(109,67,0)]">
             Precious O.
           </h1>
         </div>
@@ -27,7 +27,7 @@ const Navbar = ({ openNav }: navProps) => {
           {navLinks.map((link) => (
             <Link href={link.url} key={link.id}>
               <p
-                className="relative text-white text-xl font-medium  w-fit block
+                className="relative text-black text-2xl font-semibold  w-fit block
   after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full
   after:bottom-0 after:left-0 after:scale-x-0 after:transform after:transition-transform after:duration-300 after:origin-right
   hover:after:scale-x-100">
@@ -40,8 +40,8 @@ const Navbar = ({ openNav }: navProps) => {
         {/* Buttons  */}
         <div className="flex items-center space-x-4">
           <button
-            className="md:px-12 md:py-2.5  px-4 py-1.5 text-black text-base bg-white hover:bg-gray-200 
-        transition-all duration-200 rounded-lg ">
+            className="md:px-12 md:py-2.5 font-semibold px-4 py-1.5 text-white text-xl bg-amber-800 border-6 border-amber-800 hover:bg-transparent hover:text-amber-800 
+        transition-all duration-200 rounded-lg">
             Download Cv
           </button>
           {/* Burger Menu  */}
