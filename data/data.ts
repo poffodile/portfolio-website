@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description:
       "A MERN stack app with Natural Language Processing that lets users add tasks in plain English and converts them into structured todos.",
     tech: ["MongoDB", "Express", "React", "Node.js", "NLP"],
-    image: "/images/projects/ai-todo.png",
+    image: "./images/about-mepng.png",
     demo: "https://ai-todo-demo.vercel.app",
     repo: "https://github.com/precious/ai-todo",
   },
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       "Angular app for managing stock in/out, with dashboards, low stock alerts, JSON/CSV export, and modular features.",
     tech: ["Angular", "TypeScript", "Tailwind", "Node.js"],
-    image: "/images/projects/inventory.png",
+    image: "./images/about-mepng.png",
     repo: "https://github.com/precious/inventory",
   },
   {

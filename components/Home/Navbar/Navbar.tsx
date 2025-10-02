@@ -27,8 +27,8 @@ const Navbar = ({ openNav }: navProps) => {
           {navLinks.map((link) => (
             <Link href={link.url} key={link.id}>
               <p
-                className="relative text-black text-2xl font-semibold  w-fit block
-  after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-300 after:w-full
+                className="relative text-black text-2xl font-semibold w-fit block after:block after:content-[''] 
+  after:absolute after:h-[3px] after:bg-white after:w-full
   after:bottom-0 after:left-0 after:scale-x-0 after:transform after:transition-transform after:duration-300 after:origin-right
   hover:after:scale-x-100">
                 {link.label}
