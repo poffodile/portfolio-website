@@ -8,14 +8,14 @@ export type Project = {
   repo?: string;
 };
 
-export const projects: Project[] = [
+export const projectData: Project[] = [
   {
     id: "ai-todo",
     title: "AI-Powered To-Do List",
     description:
       "A MERN stack app with Natural Language Processing that lets users add tasks in plain English and converts them into structured todos.",
     tech: ["MongoDB", "Express", "React", "Node.js", "NLP"],
-    image: "./images/about-mepng.png",
+    image: "/images/about-mepng.png",
     demo: "https://ai-todo-demo.vercel.app",
     repo: "https://github.com/precious/ai-todo",
   },
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       "Angular app for managing stock in/out, with dashboards, low stock alerts, JSON/CSV export, and modular features.",
     tech: ["Angular", "TypeScript", "Tailwind", "Node.js"],
-    image: "./images/about-mepng.png",
+    image: "/images/about-mepng.png",
     repo: "https://github.com/precious/inventory",
   },
   {
@@ -35,6 +35,7 @@ export const projects: Project[] = [
       "Full-stack Angular app integrated with Arduino DHT11 sensors. Automatically logs requests when temperature/humidity thresholds are breached.",
     tech: ["Angular", "Arduino", "Node.js", "Socket.io"],
     image: "/images/projects/maintenance.png",
+    repo: "https://github.com/precious/inventory",
   },
   {
     id: "vet-surgery",
@@ -43,6 +44,7 @@ export const projects: Project[] = [
       "Java console app with booking, pet management, and staff features. Built using SOLID principles and tested with JUnit.",
     tech: ["Java", "JUnit", "OOP", "UML"],
     image: "/images/projects/vet-surgery.png",
+    repo: "https://github.com/precious/inventory",
   },
   {
     id: "shiftcalc",
@@ -51,5 +53,6 @@ export const projects: Project[] = [
       "Offline-first PWA for shift workers. Features OCR, charts, and IndexedDB storage. Built with Next.js and Tailwind.",
     tech: ["Next.js", "Tailwind", "Dexie", "Tesseract.js"],
     image: "/images/projects/shiftcalc.png",
+    repo: "https://github.com/precious/inventory",
   },
 ];
